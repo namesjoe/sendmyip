@@ -1,3 +1,3 @@
+# Sends your current IP address to your email
 
-send your current IP address to your email \n
-$ nohup python3 ./sender.py & 
+###  $ nohup python3 ./sender.py & 
