@@ -33,8 +33,8 @@ def sendmemyip():
         smtp.sendmail(sender, receiver, message)
 
 sendmemyip()
-seconds = 1800
-for i in np.arange(8760*2): #1 year
+seconds = 900
+while True:
     time.sleep(seconds)
     try:
         fresh_ip = os.popen(curl_exp).read()
@@ -45,4 +45,5 @@ for i in np.arange(8760*2): #1 year
         pass
     else:
         sendmemyip()
+        ip = fresh_ip
 
