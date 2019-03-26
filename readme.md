@@ -1,4 +1,4 @@
-# Sends your current IP address to your email
+# Sends your current IP address to your email if ip of ypur machine changes
 
 ###  $ nohup python3 ./sender.py &
 
